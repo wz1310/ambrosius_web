@@ -1,0 +1,7 @@
+{
+  "name": "Ambrosius Web",
+  "description": "Premium coffee machine and bean distribution platform for businesses, inspired by luxury hospitality and workspace solutions.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
