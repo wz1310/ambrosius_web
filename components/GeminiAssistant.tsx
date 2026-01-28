@@ -5,7 +5,7 @@ import { getCoffeeAdvice } from '../services/geminiService';
 const GeminiAssistant: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState<{role: 'user' | 'ai', text: string}[]>([
-    { role: 'ai', text: "Hello! I'm your BrewMaster consultant. Need help picking the right machine for your office or cafe?" }
+    { role: 'ai', text: "Hello! I'm your Ambrosius Bot. Need help picking the right machine for your office or cafe?" }
   ]);
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
@@ -45,8 +45,8 @@ const GeminiAssistant: React.FC = () => {
         <div className="fixed bottom-24 left-6 z-50 w-80 md:w-96 bg-white rounded-2xl shadow-2xl border border-gray-100 flex flex-col overflow-hidden max-h-[500px] animate-in slide-in-from-bottom-4 duration-300">
           <div className="bg-teal-800 p-4 text-white flex justify-between items-center">
             <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center font-bold">AI</div>
-              <span className="font-semibold tracking-wide">Coffee Consultant</span>
+              <div className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center font-bold text-[10px]">AMB</div>
+              <span className="font-semibold tracking-wide">Ambrosius Bot</span>
             </div>
             <button onClick={() => setIsOpen(false)} className="hover:opacity-70">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
